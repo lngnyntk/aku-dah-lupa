@@ -2,8 +2,6 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById('play');
     const p = document.getElementById('lirik');
