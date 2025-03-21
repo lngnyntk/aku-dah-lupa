@@ -26,13 +26,14 @@
     color: #fff;
     background-color: rgb(18, 93, 255);
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
     margin-top: 0.5rem;
 }
 
 #play:hover {
     background-color: #fff;
-    color: #fff;
+    color: rgb(18, 93, 255);
+    border: rgb(18, 93, 255) 2px solid;
 }
 
 p {
