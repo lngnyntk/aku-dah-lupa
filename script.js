@@ -5,13 +5,13 @@ function sleep(ms) {
 document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById('play');
     const p = document.getElementById('lirik');
+    const song = new Audio('audio.mp4');
 
     button.addEventListener("click", playSong);
 
     function playSong() {
         button.style.display = 'none';
         console.log('Song is playing');
-        new Audio('audio.mp4').play()
 
         const lirik = [
             "Aku dah lupa tak ingat lagi",
@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         (async function () {
             await sleep(1000);
+            song.play()
             for (const baris_lagu of lirik) {
                 let span = document.createElement("span");
                 p.appendChild(span);
